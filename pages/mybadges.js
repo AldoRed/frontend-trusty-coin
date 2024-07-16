@@ -1,14 +1,13 @@
 import NavbarPeople from "../components/Navbar/navbarPeople";
 import Badges from "../components/BadgeCard/badges";
-import Partners from "../components/PatnerCard/partners";
 
-function PeoplePage() {
+function MyBadges() {
   return (
     <div className="content">
       <NavbarPeople />
-      <Partners />
+      <Badges />
     </div>
   );
 }
 
-export default PeoplePage;
+export default MyBadges;

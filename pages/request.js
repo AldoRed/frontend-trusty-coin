@@ -1,12 +1,11 @@
 import NavbarPeople from "../components/Navbar/navbarPeople";
-import Badges from "../components/BadgeCard/badges";
-import Partners from "../components/PatnerCard/partners";
+import RequestForm from "../components/Request/requestForm";
 
 function PeoplePage() {
   return (
     <div className="content">
       <NavbarPeople />
-      <Partners />
+      <RequestForm />
     </div>
   );
 }

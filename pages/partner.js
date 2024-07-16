@@ -1,5 +1,4 @@
-import NavbarPartner from "../components/Partner/navbarPartner";
-
+import NavbarPartner from "../components/Navbar/navbarPartner";
 function Partner(){
   return (
     <div className="content">
