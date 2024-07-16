@@ -4,11 +4,11 @@ import Header from "../components/Header"
 import LotteryEntrance from "../components/LotteryEntrance"
 import { useMoralis } from "react-moralis"
 import BuyTokens from "../components/BuyTokens"
+import Link from "next/link";
 
 const supportedChains = ["31337", "11155111"]
 
 export default function Home() {
-    const { isWeb3Enabled, chainId } = useMoralis()
 
     return (
         <div className={styles.container}>
@@ -31,6 +31,18 @@ export default function Home() {
             ) : (
                 <div>Please connect to a Wallet</div>
             )}
+            <div className="container">
+                <div className="half">
+                    <p>
+                        <Link href="/people">People</Link>
+                    </p>
+                </div>
+                <div className="half">
+                    <p>
+                        <Link href="/partner">Partner</Link>
+                    </p>
+                </div>
+            </div>
         </div>
     )
 }
