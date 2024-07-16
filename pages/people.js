@@ -1,12 +1,10 @@
-import NavbarPeople from "../components/Navbar/navbarPeople";
-import Badges from "../components/BadgeCard/badges";
-import Partners from "../components/PatnerCard/partners";
+import NavbarPeople from '../components/People/navbarPeople';
 
 function PeoplePage() {
+
   return (
     <div className="content">
       <NavbarPeople />
-      <Partners />
     </div>
   );
 }

@@ -15,17 +15,14 @@ function NavbarPeople() {
             Trusty
           </a>
           <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-                <a className="nav-link" href="/people">Partners</a>
-              </li>
             <li className="nav-item active">
-              <a className="nav-link" href="/exchange">Buy/Send TCN</a>
+              <a className="nav-link" href="#">Buy/Send TCN</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/mybadges">My Badges</a>
+              <a className="nav-link" href="#">My Badges</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/request">New Request</a>
+              <a className="nav-link" href="#">New Request</a>
             </li>
           </ul>
           <ul className="navbar-nav ml-auto">
