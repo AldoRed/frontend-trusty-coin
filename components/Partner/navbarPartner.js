@@ -26,11 +26,8 @@ function NavbarPartner() {
               </li>
             </ul>
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <ConnectButton moralisAuth={false} />
-              </li>
-            </ul>
-            {isWeb3Enabled ? (
+              <li>
+                {isWeb3Enabled ? (
                 <div>
                     {supportedChains.includes(parseInt(chainId).toString()) ? (
                         <div className="flex flex-row"></div>
@@ -38,9 +35,15 @@ function NavbarPartner() {
                         <div>{`Please switch to a supported chainId. The supported Chain Ids are: ${supportedChains}`}</div>
                     )}
                 </div>
-            ) : (
-                <div>Please connect to a Wallet</div>
-            )}
+                ) : (
+                    <a className="nav-link">Please connect to a Wallet</a>
+                )}
+              </li>
+              <li className="nav-item">
+                <ConnectButton moralisAuth={false} />
+              </li>
+            </ul>
+            
           </div>
           
       </nav>
